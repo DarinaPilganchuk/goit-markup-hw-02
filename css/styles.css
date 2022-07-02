@@ -30,7 +30,9 @@ font-family:var(--main-font), sans-serif;
     color:#FFFFFF;
 }
 .menu-nav{
+    color: var(--title-text-color);
     font-size: 14px;
+    font-weight: 500;
     line-height:1.14;
     letter-spacing: 0.02em;
 }
@@ -41,6 +43,11 @@ font-family:var(--main-font), sans-serif;
     text-decoration: none;
     color: currentColor;
 }
+.link mail-link,
+.link tel-link{
+    color: #757575;
+}
+
 .site-nav{
     font-weight: 500;
     font-size: 14px;
@@ -65,6 +72,7 @@ color: #2196F3
 }
 .button.button-current{
     background-color: #2196F3;
+    color: #FFFFFF;
 }
 .hero {
     background-color: var(--dark-bg-cl);
@@ -72,14 +80,14 @@ color: #2196F3
 }
 .hero-title{
     color: #FFFFFF;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
-    line-height:1.4;
+    font-weight: 900;
+    font-size: 44px;
+    line-height:1.37;
+    letter-spacing: 0.06em;
     text-align:center;
 }
- .section .bg {
-    background-color:#E5E5E5;
-}
+
 .section-title {
     color:var(--title-text-color) ;
     font-weight: 700;
@@ -89,42 +97,82 @@ color: #2196F3
     text-transform: uppercase;
     
 }
+
+.section-text{
+    color: var(--primari-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+}
 .section-title-name {
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
-.section-title-prg{
-    font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
+.section-team-tx{
+color: var(--primari-text-color);
+font-weight: 400;
+font-size: 16px;
+line-height: 1.9;
+letter-spacing: 0.03em;
 }
 
-.button{
-    font-family: inherit;
-    background-color: #F5F4FA;
-    color: var(--title-text-color);
-    font-size: 16px;
-    line-height: 1.8;
+.section-title-prg{
     font-weight: 700;
-    text-align: center;
+    font-size: 18px;
+    line-height: 2;
     letter-spacing: 0.06em;
 }
-.button :hover, 
-.button:focus {
+.prg-text{
+    color: var(--primari-text-color);
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+}
+.section-team {
+    background-color: #F5F4FA;
+    width: 1600px;
+}
+.main-button{
+    font-family: inherit;
     background-color: var(--accent-color);
+    cursor: pointer;
+    color: #FFFFFF;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+}
+.main-button:hover,
+.main-button:focus{
+    background-color: #188CE8;
+    color: #FFFFFF;
+
+}
+.button{
+    font-family: inherit;
+    background-color: var(--light-bg-cl);
+    color: var(--title-texr);
+    font-size: 16px;
+    line-height: 1.62;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.button:hover, 
+.button:focus{
+    background-color: #188CE8;
     color: #FFFFFF;
 }
 
 .button {
     background-color: var(--light-bg-cl);
     cursor:pointer;
-}
-.comando {
-    background-color: var(--light-bg-cl);
-    width: 1600px;
 }
 
 .footer {
@@ -138,19 +186,27 @@ color: #2196F3
     letter-spacing: 0.03em;
 }
 .logo-link-address{
+    font-family: var(--secondary-font), sans-serif;
+    color: #FFFFFF;
     font-weight: 700;
     font-size: 26px;
     line-height:1.2;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+}
+.link.email-link,
+.link.phone-link{
+    color: rgba(255, 255, 255, 0.6);
+
 }
 
+.link.mail-link:focus,
+.link.mail-link:hover,
+.link.tel-link:focus,
+.link.tel-link:hover,
+.link.phone-link:focus,
+.link.phone-link:hover,
 .link.email-link:hover,
 .link.email-link:focus{
-    color: var(--accent-color);
-}
-.link.phone-link:focus,
-.link.phone-link:hover{
     color: var(--accent-color);
 }
 
